@@ -12,7 +12,10 @@
   "extends": [
     "airbnb",
     "airbnb/hooks",
-    "prettier"
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -26,6 +29,10 @@
       "version": "detect"
     },
     "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
       "alias": {
         "map": [
           [

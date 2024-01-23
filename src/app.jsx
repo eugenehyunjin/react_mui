@@ -1,4 +1,6 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable perfectionist/sort-imports */
+// eslint-disable-next-line import/no-unresolved
 import 'src/global.css';
 
 import { useScrollToTop } from 'src/hooks/use-scroll-to-top';
